@@ -1,3 +1,0 @@
-# Elementos HTML
-
-<!DOCTYPE html>

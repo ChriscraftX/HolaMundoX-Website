@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta description="" content="" />
+  <title>HTML</title>
+  <link rel="icon" href="/images/meme.jpg">
+</head>
+
+<body>
+  
+  <table hidden border="1" width="120">
+    <thead>
+      <tr>
+        <th>Productos</th>
+        <th>Precios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fresas</td>
+        <td>1$</td>
+      </tr>
+      <tr>
+        <td>Manzanas</td>
+        <td>3$</td>
+      </tr>
+      <tr>
+        <td>Cocos</td>
+        <td>5$</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>9$</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  
+  
+  
+  <div hidden>
+    <!--Listas o List-->
+    <h2>Lista Desordenada</h2>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+    <h2>Lista Ordenada</h2>
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ol>
+    <h2>Listas Anidadas</h2>
+    <ul>
+      <li>Lista Alfabética
+        <ol type="A">
+          <li>Letra 1</li>
+          <li>Letra 2</li>
+          <li>Letra 3</li>
+        </ol>
+      </li>
+      <li>Lista Romana
+        <ol type="i">
+          <li>Romano 1</li>
+          <li>Romano 2</li>
+          <li>Romano 3</li>
+        </ol>
+      </li>
+      <li>Lista Iniciada
+        <ol start="272">
+          <li>Elemento Secuencia</li>
+          <li>Elemento Secuencia</li>
+          <li>Elemento Secuencia</li>
+      </li>
+    </ul>
+  </div>
+  
+  <form hidden action="/formulario" method="POST">
+    <label for="Name">Nombre</label><br>
+    <input type="text" id="Name" name="name" placeholder="Ej. Cristian"><br>
+    <label for="Email">Correo</label><br>
+    <input type="email" id="Email" name="name" placeholder="email@gmail.com"><br>
+    <label for="Password">Contraseña</label><br>
+    <input type="password" id="Password" name="name"><br>
+    <label for="Genero">Hombre</label>
+    <input type="radio" id="Genero" name="genero"><br>
+    <label for="Genero">Mujer</label>
+    <input type="radio" id="Genero" name="genero"><br>
+    
+    <label for="Membership">¿Membresía?</label>
+    <input type="checkbox" id="Membership" name="membership"><br>
+    <label for="File">Elige el Archivo: </label>
+    <input type="file" id="File" name="file"><br>
+    <label for="comentario">Comentario:</label><br>
+    <textarea name="comentario" id=comentario rows="8" cols="30">Hola</textarea>
+    <input hidden type="submit" name="send" id="send" value="Send" />
+    <!--Botones o Buttons-->
+    <button type="submit">Enviar</button><br>
+    <button type="reset">Reset</button><br>
+    <button type="button">Click</button>
+  </form>
+  
+  <div>
+    <!--Titulos o Headings-->
+    <h1>Primer Heading</h1>
+    <h2>Segundo Heaging</h2>
+    <h3>Tercer Heading</h3>
+    <h4>Cuarto Heading</h4>
+    <h5>Quinto Heading</h5>
+    <h6>Sexto Heading</h6>
+    <!--Párrafos o Paragraphs-->
+    <p>Este es un Párrafo</p>
+    <p>Este es <strong>Otro Párrafo</strong> con <em>énfasis fuerte</em> y <em>énfasis cursiva</em></p>
+    <p>Este párrafo tiene un<br>Salto de Linea</p>
+    <p>Este párrafo tiene un <span style="color: green">texto referenciado</span> para aplicarle estilos</p>
+    <hr>
+    <!-- Ancla o Anchor -->
+    <a href="https://www.google.com">Ir a Google(Recargar inmediatamente)</a><br>
+    <a target="_black" href="https://www.google.com">Ir a Google(Nueva pestaña)</a>
+    <!--Imágenes o Images-->
+    <img src="images/meme.jpg" title="Meme, me voy" alt="Meme que dice: Vayanse al Carajo, yo me voy " width="300" height="300">
+  </div>
+</body>
+
+</html>
