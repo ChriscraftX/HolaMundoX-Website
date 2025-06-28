@@ -11,6 +11,49 @@
 
 <body>
   
+  <div hidden>
+    <dialog id="modal">
+      <h2>MODAL</h2>
+      <p>Este es un modal creado con la etiqueta dialog en HTML con pocas líneas de código.</p><br>
+      <button id="hide" onclick="Cerrar()">CERRAR</button>
+    </dialog>
+    <button id="show" onclick="Abrir()">VER MODAL</button>
+    
+    <script>
+      window.show.addEventListener('click', () => { window.modal.showModal() })
+      window.hide.addEventListener('click', () => { window.modal.close() })
+    </script>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div hidden>
+    <audio controls src="audio/LS.mp3"></audio>
+    <video style="width: 100%;" autoplay muted controls src="video/Steve.mp4"></video>
+    <img style="width: 100%;" src="images/meme.jpg">
+  </div>
+  
+  
+  
+  
+  <section hidden>
+    <details>
+      <summary>¿Que edad tienes?</summary>
+      <p>20 años</p>
+    </details>
+    <details>
+      <summary>¿Que te gustaría aprender?</summary>
+      <p>Desarrollo Web</p>
+    </details>
+    <details>
+      <summary>¿Cuánto Ganas?</summary>
+      <p>200$ mensuales</p>
+    </details>
+  </section>
+  
   <table hidden border="1" width="120">
     <thead>
       <tr>
@@ -82,32 +125,58 @@
     </ul>
   </div>
   
-  <form hidden action="/formulario" method="POST">
-    <label for="Name">Nombre</label><br>
-    <input type="text" id="Name" name="name" placeholder="Ej. Cristian"><br>
-    <label for="Email">Correo</label><br>
-    <input type="email" id="Email" name="name" placeholder="email@gmail.com"><br>
-    <label for="Password">Contraseña</label><br>
-    <input type="password" id="Password" name="name"><br>
-    <label for="Genero">Hombre</label>
-    <input type="radio" id="Genero" name="genero"><br>
-    <label for="Genero">Mujer</label>
-    <input type="radio" id="Genero" name="genero"><br>
-    
-    <label for="Membership">¿Membresía?</label>
-    <input type="checkbox" id="Membership" name="membership"><br>
-    <label for="File">Elige el Archivo: </label>
-    <input type="file" id="File" name="file"><br>
-    <label for="comentario">Comentario:</label><br>
-    <textarea name="comentario" id=comentario rows="8" cols="30">Hola</textarea>
-    <input hidden type="submit" name="send" id="send" value="Send" />
-    <!--Botones o Buttons-->
-    <button type="submit">Enviar</button><br>
-    <button type="reset">Reset</button><br>
-    <button type="button">Click</button>
+  <form hidden action="/" method="POST">
+    <fieldset>
+      <legend>
+        <h2>Formulario:</h2>
+      </legend>
+      
+      <label>Nombre: <br>
+        <input type="text" name="name" placeholder="Ej. Cristian"></label><br>
+      <label>Correo: <br>
+        <input type="email" name="name" placeholder="email@gmail.com"></label<br>
+        <label>Contraseña: <br>
+          <input type="password" name="name"></label><br>
+        <label>Hombre
+          <input type="radio" name="genero"></label><br>
+        <label>Mujer
+          <input type="radio" name="genero"></label><br>
+        
+        <label for="Membership">¿Membresía?</label>
+        <input type="checkbox" id="Membership" name="membership"><br>
+        <label for="File">Elige el Archivo: </label>
+        <input type="file" id="File" name="file"><br>
+        
+        <fieldset>
+          <legend>Otros:</legend>
+          <div>
+            <label>¿Fruta Favorito?
+              <select>
+                <option value="1">Uva</option>
+                <option value="2">Manzana</option>
+                <option value="3">Durazno</option>
+              </select>
+            </label><br>
+            <datalist id="fruits">
+              <option value="Cereza"></option>
+              <option value="Mango"></option>
+              <option value="Cacao"></option>
+            </datalist>
+            <label>Otras Frutas: <input list="fruits" name="frutas"></label>
+          </div>
+        </fieldset>
+        <label for="comentario">Comentario:</label><br>
+        <textarea name="comentario" id=comentario rows="8" cols="30">Hola</textarea>
+        <input hidden type="submit" name="send" id="send" value="Send" />
+        <!--Botones o Buttons-->
+        <button type="submit">Enviar</button><br>
+        <button type="reset">Reset</button><br>
+        <button type="button">Click</button>
   </form>
+  </fieldset>
   
-  <div>
+  
+  <div hidden>
     <!--Titulos o Headings-->
     <h1>Primer Heading</h1>
     <h2>Segundo Heaging</h2>
