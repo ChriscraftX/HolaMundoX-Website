@@ -1,6 +1,58 @@
-.info_address {
-      color: red;
-    }
-h1 {
-  color: blue;
+.p-border:hover {
+  border: 3px solid orangered; /* Afecta el Contenido*/
 }
+.p-outline:hover {
+  outline: 3px solid orangered; /* Se dibuja sobre el contenido*/
+}
+ /* PSEUDO-CLASES*/
+.a-hover:hover { /* Cuanto se selecciona el contenido*/
+  color: red;
+}
+.a-active:active { /* Cuanto se clickea el contenido*/
+  color: green;
+}
+.a-focus:focus { /* Cuanto se le da foco al contenido*/
+  border: 10px solid yellowgreen;
+}
+
+
+
+.h2-color {
+  color: hsla(57, 93%, 47%, 1); /*Color HSLA */
+}
+.p-azul {
+  color: #0F1FCA; /*Color Hexadecimal*/
+}
+.p-rojo {
+  color: red; /*Color Puro*/
+}
+.p-morado {
+  color: rgb(62 8 230 / 100%); /*Color RGB*/
+}
+
+
+
+
+
+/* PARTES CSS
+Selector {
+  propiedad: valor
+}*/
+
+/* SELECTORES
+* = TODOS
+.Clases = CLASES
+#Id = ID
+Elementos = ELEMENTOS HTML
+*/
+
+/* Herencia
+Algunas Propiedades heredan sus valores a sus elementos hijos en HTML:
+SI: color, font-family, font-size.
+NO: border.
+
+Valores de Herencia:
+inherit: Heredad el valor del padre.
+initial: Valor inicial.
+revert: Valor por defecto.
+*/
